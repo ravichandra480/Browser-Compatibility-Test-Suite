@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html ng-app="app">
+	<head>
+		<meta charset="UTF-8">
+		<title>css browser compatibility test suite</title>
+
+		<script src="js/angular.min.js"></script>
+		<script src="js/angular-resource.min.js"></script>
+		<script src="js/cssparser.js"></script>						
+
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<link href="css/main.css" rel="stylesheet">
+	</head>
+
+	<body ng-controller="BeerCounter">
+
+		<nav class="navbar navbar-inverse suite-test-wraper">
+			<div class="container-fluid title ">
+				<h3>CSS Browser Compatibility Test Suite</h3>
+			</div>
+	    </nav>
+
+	    <main class="container margin-top suite-test-container">
+			<file-reader file-blob-obj="fileBlobObj(data)"></file-reader>
+{{css}}
+			<section class="browser-data">
+				<h3>Select browsers to compare</h3>
+				<div ng-repeat="agent in browserData.agents">
+					<div>
+						<span class="browser-lable">{{agent.browser}}</span>
+					</div>
+					
+					<div class="version" ng-repeat="version in agent.versions track by $index">
+						<span class="version-data" ng-if="version"><input type="checkbox" />&nbsp;&nbsp;{{version}}</span>
+					</div>
+				</div>
+			</section>
+	    </main>	    
+
+        <script src="js/app.js"></script>
+		
+	</body>
+
+</html>

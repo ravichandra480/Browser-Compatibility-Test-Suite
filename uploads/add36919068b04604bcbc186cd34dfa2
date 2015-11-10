@@ -1,0 +1,11 @@
+.test-class{
+	background-image: url(flower.png), url(ball.png), url(grass.png);
+	background-position: center center, 20% 80%, top left, bottom right;
+	background-origin: border-box, content-box;
+	background-repeat: no-repeat;
+}
+#borderimg {
+	-webkit-border-image: url(border.png) 30 round; /* Safari 3.1-5 */
+	-o-border-image: url(border.png) 30 round; /* Opera 11-12.1 */
+	border-image: url(border.png) 30 round;
+}

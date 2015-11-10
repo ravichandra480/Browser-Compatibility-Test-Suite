@@ -1,0 +1,34 @@
+{
+  "name": "browser-compatibility-test-suite",
+  "version": "1.0.0",
+  "description": "This is a test application for checking the browser compatibility for CSS files (In future html and js files also can be tested)",
+  "main": "server.js",
+  "dependencies": {
+    "css": "^2.2.1",
+    "body-parser": "^1.14.1",
+    "express": "^4.13.3",
+    "multer": "^1.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node server.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ravichandra480/Browser-Compatibility-Test-Suite.git"
+  },
+  "keywords": [
+    "css",
+    "nodejs",
+    "test",
+    "browser",
+    "compatibility"
+  ],
+  "author": "Ravi Chandra Ravulapati",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ravichandra480/Browser-Compatibility-Test-Suite/issues"
+  },
+  "homepage": "https://github.com/ravichandra480/Browser-Compatibility-Test-Suite#readme"
+}
