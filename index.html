@@ -41,14 +41,17 @@
 							<span class="version" ng-repeat="version in agent.versions track by $index">
 								<span class="label"
 									  ng-class="{'n':'label-danger',
+												'y x':'label-success',
 												'y':'label-success',
 												'a':'label-warning',
-												'a x':'label-info',
-												'a #1':'label-info',
-												'a #3':'label-info',
-												'a x #3':'label-info',
-												'a #2 #3':'label-info',
-												'a #2':'label-info'}[bwo.stats[key][version]]">{{version}}</span>
+												'a x':'label-warning',
+												'a #1':'label-warning',
+												'a #3':'label-warning',
+												'a x #1':'label-warning',
+												'a x #2':'label-warning',
+												'a x #3':'label-warning',
+												'a #2 #3':'label-warning',
+												'a #2':'label-warning'}[bwo.stats[key][version]]">{{version}}</span>
 							</span>
 						</div>
 					</li>
